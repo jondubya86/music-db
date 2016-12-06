@@ -6,4 +6,5 @@ const playlist = require('./playlist-route');
 module.exports = {artistRouter: artist,
                   genreRouter: genre,
                   songRouter: songs,
-                  playlistRouter: playlist}
+                  playlistRouter: playlist
+                };

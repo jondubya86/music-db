@@ -19,7 +19,9 @@ const playlistRouter = router.playlistRouter;
   app.use('/api/genre', genreRouter);
 	app.use('/api/song', songRouter);
   app.use('/api/playlist', playlistRouter);
-  app.listen('9999', () => console.log('Listening on port 9999'));
+	app.use('/*', (req,res)=>{
+			(res.send('404 bub'))});
+  app.listen('9998', () => console.log('Listening on port 9998'));
 //body-parser middleware adds .body property to req (if we make a POST AJAX request with some data attached, that data will be accessible as req.body)
 
 
